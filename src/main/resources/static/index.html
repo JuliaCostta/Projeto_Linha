@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Costura</title>
+</head>
+
+<body>
+
+<h1>🧵 Sistema de Costura</h1>
+
+<h2>Cadastrar Cliente</h2>
+
+<input id="nome" placeholder="Nome do cliente">
+
+<input id="telefone" placeholder="Telefone">
+
+<button onclick="salvarCliente()">Salvar Cliente</button>
+
+<script>
+
+    function salvarCliente(){
+
+    fetch("/api/clientes",{
+
+    method:"POST",
+
+    headers:{
+    "Content-Type":"application/json"
+    },
+
+    body: JSON.stringify({
+
+    nome: document.getElementById("nome").value,
+    telefone: document.getElementById("telefone").value
+
+    })
+
+    })
+
+    .then(res => res.json())
+    .then(data => alert("Cliente cadastrado!"))
+
+    }
+
+</script>
+
+</body>
+</html>
