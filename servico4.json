@@ -1,0 +1,14 @@
+{
+  "descricao": "Ajuste de camisa",
+  "peca": "Camisa",
+  "dataEntrada": "2026-07-02",
+  "dataEntrega": "2026-07-08",
+  "linhaReta": 1,
+  "linhaOverlock": 0,
+  "ziper": 0,
+  "valorTotal": 60.00,
+  "valorPago": 0,
+  "cliente": {
+    "id": 6
+  }
+}
